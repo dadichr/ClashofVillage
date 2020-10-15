@@ -1,0 +1,156 @@
+
+
+### register 1
+POST http://localhost:3000/users/register/
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "password": "passwold"
+}
+
+### Login 1
+POST http://localhost:3000/users/login/
+Content-Type: application/json
+
+{
+    "email": "user@example.com",
+    "password": "passwold"
+}
+
+
+### List Market
+GET http://localhost:3000/markets/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+### POST Market
+POST http://localhost:3000/markets/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+{
+    "nameMarket" : "TransMart"
+}
+
+### GET Market
+GET http://localhost:3000/markets/5f82e9e71fb4df2510a387ce
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+### PUT Market
+PUT http://localhost:3000/markets/5f82e9e71fb4df2510a387ce
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+{
+    "nameMarket": "Ichikaru Ramen"
+}
+
+### DELETE Market
+DELETE http://localhost:3000/markets/5f82e9e71fb4df2510a387ce
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+### GET Collect Market
+GET http://localhost:3000/markets/5f82e9e71fb4df2510a387ce/collect
+Collect-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZTlhODFmYjRkZjI1MTBhMzg3Y2QiLCJpYXQiOjE2MDI0MTUwMjh9.ly3n9ai6LdkEW6d2mCt4x0XS_EgkD03YDbVe0VJU2uw
+
+
+
+### BARRACK ###
+
+
+### List Barrack
+GET http://localhost:3000/barracks/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+### POST Barrack
+POST http://localhost:3000/barracks/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+{
+    "nameBarrack" : "Barrack"
+}
+
+### GET Barrack
+GET http://localhost:3000/barracks/5f82eb811fb4df2510a387d0
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+### PUT Barrack
+PUT http://localhost:3000/barracks/5f82eb811fb4df2510a387d0
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+{
+    "nameBarrack": "Konoha"
+}
+
+### DELETE Barrack
+DELETE http://localhost:3000/barracks/5f82eb811fb4df2510a387d0
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+### GET Collect Barrack
+GET http://localhost:3000/barracks/5f82eb811fb4df2510a387d0/collect
+Collect-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWE0NTFmYjRkZjI1MTBhMzg3Y2YiLCJpYXQiOjE2MDI0MTUxODV9.72yvkeRTGJD1Qt2WxcbfCe0P_ajykP5T7bJArdZmrEY
+
+
+### FARM ###
+
+### List Farm
+GET http://localhost:3000/farms/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+### POST Farm
+POST http://localhost:3000/farms/
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+{
+    "nameFarm" : "HarvestMoon"
+}
+
+### GET Farm
+GET http://localhost:3000/farms/5f82ec531fb4df2510a387d3
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+### PUT Farm
+PUT http://localhost:3000/farms/5f82ec531fb4df2510a387d3
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+{
+    "nameFarm": "Supermarket"
+}
+
+### DELETE Farm
+DELETE http://localhost:3000/farms/5f82ec531fb4df2510a387d3
+Content-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+### GET Collect Farm
+GET http://localhost:3000/farms/5f82ec531fb4df2510a387d3/collect
+Collect-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZWMyYTFmYjRkZjI1MTBhMzg3ZDIiLCJpYXQiOjE2MDI0MTU2NjR9.Xp7Bwuzb7uBLygsTHVXco7mDB-mzRa3p21sprGusBcg
+
+
+
+
+### INVADES ###
+
+### user 1 invades user 2 (endpoint pakai id user 2, pakai access token user 1)
+POST http://localhost:3000/invades/5f82f9de2ab1e72ad8e0b5b7
+Collect-Type: application/json
+access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjgyZjhkMjJhYjFlNzJhZDhlMGI1YjYiLCJpYXQiOjE2MDI0MTkwMTN9.u17YJqmUV6iwUPYBp7dFKp0Cj5lMhVxdYCR4Ix_XOq0
+
+{
+    "soldiers": 5
+}
